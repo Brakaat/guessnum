@@ -1,13 +1,13 @@
 import random
 while True:
-    a = int(input('please select the Minimun\n'))
-    b = int(input('please select the Maximum\n'))
-    if a >= b:
+    start = int(input('please select the Minimun\n'))
+    end = int(input('please select the Maximum\n'))
+    if start >= end:
         print('your Maximun is smaller than Minimum, please try again!!')
         continue
     else:
-        print('The random will between', a,'and', b)
-        random_number = random.randint(a,b)
+        print('The random will between', start,'and', end)
+        random_number = random.randint(start,end)
         count = 0
         while True:
             user_number = int(input('choose the number:\n'))
